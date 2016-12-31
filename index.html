@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!-- Trevor Pawlewicz -->
+
+<!-- Goals - to make a fun project that incorporates the following:
+	1) preload images.
+	2) utilize random function for psuedo random effect.
+	3) utilize setTimeout/clearTimeout for "shuffle" animation.
+	4) utilize the "onClick" event to pass a value (this) to a function from a graphic.
+	5) using various "for" loops to to populate arrays and values.
+	6) utilizing Boolean values to handle click events.
+	7) using style properties to postion and display graphics.
+	8) utilizing getElementById() to change the visibilty of images animated
+		and audio fx -->
+
+<html>
+	<head>
+		<title>Find the Ace!</title>
+		<link rel="stylesheet" href="public/css/style.css"/>
+		<!-- animation stylesheet -->
+		<link rel="stylesheet" href="public/css/animate.min.css"/>
+		<!-- modal stylesheet -->
+    	<link rel="stylesheet" href="public/css/modal-window.css"/>
+	</head>
+
+	<body bgColor="#009900" onload="instructions()">
+
+		<div class="left" id="player1"><span>Player</span> 1<p id="player1score"></p></div>
+		<div class="right" id="player2"><span>Player</span> 2<p id="player2score"></p></div>
+
+		<center>
+			<h1>Find the Ace!</h1>
+			<form name="game" action="" method="">
+				<img name="displayLeft" id="displayLeft"
+					src="public/images/cardBlue.jpg">
+				<img name="displayCenter" id="displayCenter"
+					src="public/images/cardRed.jpg">
+				<img name="displayRight" id="displayRight"
+					src="public/images/cardBlue.jpg">
+				<p></p>
+				<input type="button" id="dealCards"
+					value="Deal Cards"/>
+			    <input type="button" id="shuffleDeck"
+					value="Shuffle"/>
+				<p></p>
+			</form>
+			<p id="winnerText"></p>
+		</center>
+
+		<img name="chipsFarLeft" id="chipsFarLeft" class="chips"
+			src="public/images/poker_chipsLeft.png">
+		<img name="chipsLeft" id="chipsLeft" class="chips"
+			src="public/images/poker_chipsLeft.png">
+		<img name="chipsCenter1" id="chipsCenter1" class="chips"
+			src="public/images/poker_chipsLeft.png">
+		<img name="chipsCenter3" id="chipsCenter3" class="chips"
+			src="public/images/poker_chipsLeft.png">
+		<img name="chipsCenter2" id="chipsCenter2" class="chips"
+			src="public/images/poker_chipsRight.png">
+		<img name="chipsCenter4" id="chipsCenter4" class="chips"
+			src="public/images/poker_chipsRight.png">
+		<img name="chipsRight" id="chipsRight" class="chips"
+			src="public/images/poker_chipsRight.png">
+		<img name="chipsFarRight" id="chipsFarRight" class="chips"
+			src="public/images/poker_chipsRight.png">
+
+		<!-- modal window -->
+		<div id="share-options">
+			<img src="public/images/cardsIntro.jpg" alt="Play!" id="message"/>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="public/js/gamePlay.js"></script>
+	<!-- modal scripts -->
+	<script src="public/js/jquery-2.1.4.js"></script>
+    <script src="public/js/modal-window.js"></script>
+    <script src="public/js/modal-init.js"></script>
+</html>

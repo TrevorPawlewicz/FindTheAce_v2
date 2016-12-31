@@ -1,0 +1,51 @@
+
+.modal {
+    position: fixed;
+ }
+.modal-close {
+    cursor: pointer;
+ }
+#window {
+    background: #fff;
+    text-align: center;
+ }
+#share-options {
+    /* center div */
+    width: 76%;
+    margin: 0 auto;
+}
+#share-options img {
+    width: 500px;
+    height: 440px;
+
+    border: 10px;
+    /*             top,    right, bottom,  left */
+    border-color: #E6E6E6 #474747 #000000 #A1A1A1;
+    border-style: outset;
+    box-shadow: 14px 14px 20px #000000;
+}
+
+button.modal-close {
+    background-color: #FF0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    /* top,right,bottom,left */
+    padding: 18px 50px 1px 50px;
+    margin: 16px 0 0 0; /* top,right,bottom,left */
+
+    display: block; /* change this from inline-block */
+    width: 40%; /* setting the width */
+    margin: 0 auto; /* this will center  it */
+    text-align: center;
+
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 4px #000000;
+}
+
+button.modal-close:hover {
+    background-color: #ed612f;
+}

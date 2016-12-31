@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Sho-CardCapsNF';
+    src: url('/fonts/Sho-CardCapsNF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: Sho-CardCapsNF;
+	color: #CCFFFF;
+	background: url("/images/poker-table-felt.jpg");
+    text-shadow: 5px 5px 4px #000;
+}
+
+#winnerText {
+    font-size: 128px;
+}
+
+input[type="button"] {
+    background-color: #FF0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    /* top,right,bottom,left */
+    padding: 10px 5px 10px 5px;
+    margin: 16px 10px 0 10px;
+    float: center;
+
+    text-transform: uppercase;
+    box-shadow: 6px 6px 4px #000000;
+}
+input[type="button"]:active {
+    color: #FFFF00;
+    box-shadow: inset 0 0 0 1px #27496d,
+                inset 0 5px 30px #193047;
+}
+
+img#chipsLeft, img#chipsCenter1, img#chipsCenter2, img#chipsRight,
+img#chipsFarLeft, img#chipsCenter3, img#chipsCenter4, img#chipsFarRight {
+    opacity: 0; /* initially invisible */
+	position:absolute;
+}
+
+input {
+    box-shadow: 6px 6px 4px #000000;
+}
+#displayLeft, #displayCenter, #displayRight {
+	border: 2px solid;
+    border-radius: 10px;
+	width: 187px;
+	height: 262px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+#chipsLeft, #chipsCenter1, #chipsCenter2, #chipsRight,
+#chipsFarLeft, #chipsCenter3, #chipsCenter4, #chipsFarRight {
+	width: 175px;
+	height: 148px;
+}
+img#chipsFarLeft {
+	top:410px;
+	left:180px;
+}
+img#chipsCenter1 {
+	top:450px;
+	left:320px;
+}
+img#chipsLeft {
+	top:560px;
+	left:260px;
+}
+img#chipsCenter2 {
+	top:520px;
+	left:440px;
+}
+img#chipsCenter3 {
+	top:440px;
+	left:600px;
+}
+img#chipsCenter4 {
+	top:580px;
+	left:610px;
+}
+img#chipsRight {
+	top:460px;
+	left:800px;
+}
+img#chipsFarRight {
+	top:580px;
+	left:800px;
+}
+
+#player1 {
+	position: relative;
+	float: left;
+	margin: 5px 0px 5px 10px;
+	width: 20%;
+	height: 200px;
+	text-align: center;
+	font-size: 74px;
+}
+#player2 {
+	position: relative;
+	float: right;
+    /* top,right,bottom,left */
+    margin: 5px 30px 5px 0px;
+	width: 20%;
+	height: 200px;
+	text-align: center;
+	font-size: 74px;
+}
+#player1 span, #player2 span{
+    text-decoration: underline;
+}
+.inactivePlayer {
+    /* grey out inactive player by adding class */
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+}
